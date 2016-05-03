@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Example title 1</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      }
+      body{
+        background: green;
+        display:flex;
+        height: 100vh;
+      }
+      .sidebar{
+        flex: 0 0 200px;
+        background: black;
+      }
+      .content-scroll{
+        flex:1;
+        background: blue;
+        overflow-y:scroll;
+      }
+      .content{
+        background: red;
+      }
+      article{
+        min-height: 1000px;
+        background: white;
+        border: 10px solid lightskyblue;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="sidebar"> sidebar</div>
+    <div class="content-scroll">
+      <div class="content">
+        <article class="scroll_check prerendered" id="article_foo" >
+          Foo
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
